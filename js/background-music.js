@@ -3,26 +3,12 @@
     'use strict';
     
     // Music playlist - you can add more songs here
-    // 注意：请将您的《Fractures》音乐文件放到 source/music/ 目录下
+    // 注意：请将您的音乐文件放到 themes/butterfly/source/music/ 目录下
     const musicPlaylist = [
         {
-            name: 'Fractures',
-            artist: 'ILLENIUM feat. Nevve',
-            url: '/music/fractures.mp3',  // 请将您的音乐文件重命名为 fractures.mp3 并放到 source/music/ 目录
-            cover: 'https://i1.sndcdn.com/artworks-000165983511-k3evsv-t500x500.jpg',
-            lrc: ''
-        },
-        {
-            name: 'Fractures (Extended Mix)',
-            artist: 'ILLENIUM feat. Nevve',
-            url: '/music/fractures-extended.mp3',  // 可选：扩展版本
-            cover: 'https://i1.sndcdn.com/artworks-000165983511-k3evsv-t500x500.jpg',
-            lrc: ''
-        },
-        {
-            name: 'Fractures (Instrumental)',
-            artist: 'ILLENIUM',
-            url: '/music/fractures-instrumental.mp3',  // 可选：纯音乐版本
+            name: '三叶的主题曲',
+            artist: '新海诚',
+            url: '/music/三叶主题曲.mp3',  // 三叶的主题曲
             cover: 'https://i1.sndcdn.com/artworks-000165983511-k3evsv-t500x500.jpg',
             lrc: ''
         }
@@ -256,7 +242,7 @@
     if (!localStorage.getItem('music-help-shown')) {
         setTimeout(() => {
             if (window.btf && window.btf.snackbarShow) {
-                window.btf.snackbarShow('🎵 《Fractures》背景音乐已启用！点击右上角音乐按钮或按 M 键控制播放');
+                window.btf.snackbarShow('🎵 《三叶的主题曲》背景音乐已启用！点击右上角音乐按钮或按 M 键控制播放');
             }
             localStorage.setItem('music-help-shown', 'true');
         }, 2000);
